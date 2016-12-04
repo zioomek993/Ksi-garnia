@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "Name": "Harry Potter i Przeklęte Dziecko. Część pierwsza i druga",
+        "Release": 1479340800,
+        "Price": "29,25 zł",
+        "Author": "Joanne K. Rowling",
+        "Publish": "Media Rodzina",
+        "Type": 2,
+        "SpecialOffer": true
+    },
+    {
+        "id": 2,
+        "Name": "Magiczne Drzewo. Inwazja",
+        "Release": 1426896000,
+        "Price": "29,25 zł",
+        "Author": "Andrzej Maleszka",
+        "Publish": "Znak",
+        "Type": 2,
+        "SpecialOffer": false
+    },
+    {
+        "id": 3,
+        "Name": "Leśna Polana",
+        "Release": 1478822400,
+        "Price": "27,68 zł",
+        "Author": "Katarzyna Michalak",
+        "Publish": "Znak",
+        "Type": 2,
+        "SpecialOffer": false
+    },
+    {
+        "id": 4,
+        "Name": "Niepokorni",
+        "Release": "1416614400",
+        "Price": "33,74 zł",
+        "Author": "Vincent V Severski",
+        "Publish": "Czarna Owca",
+        "Type": 2,
+        "SpecialOffer": true
+    },
+    {
+        "id": 5,
+        "Name": "Pan na Wisiołach Tom 1",
+        "Release": 1479340800,
+        "Price": "21,71 zł",
+        "Author": "Piotr Kulpa",
+        "Publish": "Storybox",
+        "Type": 1,
+        "SpecialOffer": true
+    },
+    {
+        "id": 6,
+        "Name": "Gamedec. Obrazki z Imperium. Tom 2 ",
+        "Release": 1479340800,
+        "Price": "24,32 zł",
+        "Author": "Marcin Przybyłek",
+        "Publish": "Storybox",
+        "Type": 1,
+        "SpecialOffer": false
+    },
+    {
+        "id": 7,
+        "Name": "Księga z San Michele",
+        "Release": 1481999622,
+        "Price": "24,32 zł",
+        "Author": "Axel Munthe",
+        "Publish": "Storybox",
+        "Type": 1,
+        "SpecialOffer": false
+    },
+    {
+        "id": 8,
+        "Name": "Malarka gwiazd",
+        "Release": 1480876337,
+        "Price": "32,63 zł",
+        "Author": "Amelia Noguera",
+        "Publish": "Rebis",
+        "Type": 1,
+        "SpecialOffer": true
+    }
+]

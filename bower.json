@@ -1,0 +1,33 @@
+{
+  "name": "wv_alarm",
+  "version": "0.1.0",
+  "authors": [
+    "Stlife"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "private",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "external",
+    "src",
+    "tasks",
+    "typings",
+    "Gruntfile.js",
+    "package.json",
+    "tsd.json"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-bootstrap": "^2.2.0",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.16.0",
+    "angular-animate": "^1.5.9",
+    "angular-sanitize": "^1.5.9"
+  }
+}

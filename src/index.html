@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="Api">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Księgarnia</title>
+
+  <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="lib/bootstrap/fonts/glyphicons-halflings-regular.eot" rel="stylesheet">
+  <link href="lib/bootstrap/fonts/glyphicons-halflings-regular.svg" rel="stylesheet">
+  <link href="lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" rel="stylesheet">
+  <link href="lib/bootstrap/fonts/glyphicons-halflings-regular.woff" rel="stylesheet">
+  <link href="lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" rel="stylesheet">
+  <link href="lib/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet">
+  <link href="sass/styles.css" rel="stylesheet">
+  <link href="sass/styles.css.map" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular-ui-router/angular-ui-router.min.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="lib/angular-animate/angular-animate.js"></script>
+  <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+  <script src="lib/moment/moment.js"></script>
+
+
+ 
+  <!--ServerModule-->
+  <script src="ts/serverModule/services/localstorageservice.js"></script>
+  <script src="ts/serverModule/services/serverservice.js"></script>
+  <script src="ts/serverModule/servermodule.js"></script>
+
+
+  <!-- ApiModule -->
+  <script src="ts/apiModule/controllers/listcontroller.js"></script>
+  <script src="ts/apiModule/controllers/headercontroller.js"></script>
+  <script src="ts/apiModule/controllers/modalcontroller.js"></script>
+  <script src="ts/apiModule/controllers/addtobasketmodalcontroller.js"></script>
+  <script src="ts/apiModule/models/datamodel.js"></script>
+  <script src="ts/apiModule/services/apiservice.js"></script>
+  <script src="ts/apiModule/apimodule.js"></script>
+
+
+  <!--App-->
+
+  <script src="ts/app.js"></script>
+
+  <div class="conteiner">
+    <div class="row">
+
+      <div class="header" ng-include="'ts/apiModule/views/header.html'"></div>
+      <div class="border"></div>
+      <div ui-view></div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

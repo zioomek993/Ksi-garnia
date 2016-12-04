@@ -1,0 +1,57 @@
+<div class="content">
+    <div class="col-xs-12">
+        <div class=" pageContent">
+            <div class="tittle">
+                <h2>Katalog Książek</h2>
+            </div>
+            <div class="btn-group btn-group-justified buttonGroup" role="toolbar">
+                <div class="btn-group customButton" role="button">
+                    <button type="button" class="btn" ng-click="vm.changedCategory(0)">Wszystkie</button>
+                </div>
+                <div class="btn-group customButton" role="button">
+                    <button type="button" class="btn" ng-click="vm.changedCategory(1)">Audiobooki</button>
+                </div>
+                <div class="btn-group customButton" role="button">
+                    <button type="button" class="btn" ng-click="vm.changedCategory(2)">E-booki</button>
+                </div>
+                <div class="btn-group customButton" role="button">
+                    <button type="button" class="btn" ng-click="vm.changedCategory(3)">Nowości</button>
+                </div>
+                <div class="btn-group customButton" role="button">
+                    <button type="button" class="btn" ng-click="vm.changedCategory(4)">Zapowiedzi</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nazwa</th>
+                                    <th>Data Wydania</th>
+                                    <th>Cena</th>
+                                    <th>Autor</th>
+                                    <th>Wydawnictow</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="row in vm.data" >
+                                    <td>{{row.Name}}</td>
+                                    <td>{{row.parseData()}}</td>
+                                    <td>{{row.Price}}</td>
+                                    <td>{{row.Author}}</td>
+                                    <td>{{row.Publish}}</td>
+                                    <td><button class="btn" ng-click="vm.addToCard($index)">do Koszyka</button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

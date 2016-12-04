@@ -1,0 +1,192 @@
+body{
+    @media (max-width: 1067px){
+        p{
+            font-size: 12px;
+        }
+        h2{
+            font-size: 24px!important;
+        }
+        label{
+            font-size: 12px;
+        }
+    }
+    @media (max-width: 934px){
+        p{
+            font-size: 11px;
+        }
+        h2{
+            font-size: 22px!important;
+        }
+        label{
+            font-size: 11px;
+        }
+    }
+    min-width: 320px;
+   
+    max-width: 100%;
+    background-color: white;
+    .conteiner{
+        display: block;
+            .header{
+                background-color:#f4fcfc;
+                position: relative;
+                .row{
+                    @media (max-width: 886px){
+                        .search{
+                            display: none;
+                        }
+                        .logo,.basket{
+                            width: 45%;
+                        }
+                        .icons{
+                            display: inline-block!important;
+                            width: 10%;
+                            margin-left: -42px;
+                            margin-top: 4%;
+                            button{
+                                background-color: #F4FCFC;
+                                border: 0px;
+                                font-size: 20px;
+                            }
+                            .shoppingIcon{
+                                display: none!important;
+                            }
+                        }
+                    }
+                    @media (max-width: 619px){
+                        .logo{
+                            width: 75%;
+                            .logoContent{
+                                p{
+                                    display: none;
+                                }
+                            }
+                        }
+                        .basket{
+                           display: none;
+                        }
+                        .icons{
+                            width: 25%;
+                            display: inline-block!important;
+                            margin: 4% auto;
+                            button{
+                                display: block!important;
+                                float: left;
+                                background-color: #F4FCFC;
+                                border: 0px;
+                                font-size: 20px;
+
+                            }
+                            .shoppingIcon{
+                                display: inline-block!important;
+                            }
+                            
+                        }
+                       
+                            
+                    }
+                    .logo{
+                        div{
+                            padding: 0;
+                            display: block;
+                            margin-left: 35px;
+                            h2{
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                    .search{
+                        
+                            padding: 0;
+                            margin-top: 30px;
+                        div{
+                            position: relative;
+                            display: inline-block;
+                            label{
+                                margin:5px 5px 0; 
+                                text-align: center;
+                                float: left;
+                                
+                            }
+                            input{
+                                display: block;
+                                float: left;
+                                width: 50%;
+                                }
+                        }
+                    }
+                    .basket{
+                        button{
+                            display: none;
+                            }
+                        .bascetContetn{
+                            margin: 25px auto;
+                            
+                            label{
+                                margin: 13px 10px;
+                                display: block;
+                                float: left;
+                            }
+                            div{
+                                display: block;
+                                float: left;
+                                width: 50%;
+                                height: 48px;
+                                border: 1px solid black;
+                                span{
+                                    font-size: 12px;
+                                    text-align: left;
+                                    display: block;
+                                    margin: 13px 13px;
+                                }    
+                            }
+                            
+                        }    
+                    }
+                    .icons{
+                        display: none;
+                    }
+                }
+            }
+            .border{
+                position: relative;
+                width: 100%;
+                height: 2px;
+                background-color: darkgray;
+            
+            }
+            .content{
+                display: block;
+                .pageContent{
+                    width: 75%;
+                    display: block;
+                    margin: 60px auto;
+                    div{
+                        .tittle{
+                            display: block;
+                            height: 50px;
+                            margin: 35px;
+                        }
+                    }
+                    .buttonGroup{
+                        .customButton{
+                            margin: 0;
+                            padding: 0;
+                            button{
+                                background-color: #F4FCFC;
+                                width: 100%;
+                                border:2px solid #DDDDDD;
+                                border-top-left-radius: 20px!important;
+                                border-top-right-radius: 20px!important;
+                                border-bottom-left-radius: 0;
+                                border-bottom-right-radius: 0; 
+                            }
+                            button:active, button:hover, button:visited, button:focus{
+                                background-color: #d8d8d8!important;
+                            }    
+                        }
+                    }
+                }   
+            }
+    }
+}

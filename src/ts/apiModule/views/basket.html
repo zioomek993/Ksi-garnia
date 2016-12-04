@@ -1,0 +1,40 @@
+<div class="modal-demo">
+  <div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Twój Koszyk</h3>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <div class="col-xs-12">
+
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>Nazwa</th>
+              <th>Data Wydania</th>
+              <th>Cena</th>
+              <th>Autor</th>
+              <th>Wydawnictwo</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="row in vm.data track by $index">
+              <td>{{row.Name}}</td>
+              <td>{{row.Release}}</td>
+              <td>{{row.Price}}</td>
+              <td>{{row.Author}}</td>
+              <td>{{row.Publish}}</td>
+              <td>{{row.Media}}</td>
+              <td>{{row.Cover}}</td>
+              <td><button class="btn" ng-click="vm.deleteItem($index)">Usuń</button></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" type="button" ng-click="vm.save()">OK</button>
+      <button class="btn btn-warning" type="button" ng-click="vm.cancel()">Cancel</button>
+    </div>
+  </div>

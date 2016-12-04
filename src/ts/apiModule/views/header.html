@@ -1,0 +1,28 @@
+<div class="row" ng-controller="HeaderController as vm">
+    <div class="col-xs-12 col-sm-12">
+        <div class="col-sm-4 col-xs-6 logo">
+            <div class="logoContent">
+                <h2>Księgarnia Internetowa</h2>
+                <p>Nasze sklepy prowadzimy z pasją!</p>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6 search">
+            <div class="searchForm form-group">
+                <label>Wyszukiwarka</label>
+                <input type="text" class="form-control" placeholder="Search" ng-model="vm.searchText">
+                <button class="btn btn-default" type="submit" ng-click="vm.changedSearchText()">Szukaj</button>
+            </div>
+
+        </div>
+        <div class="col-sm-4 col-xs-6 basket">
+            <div class="bascetContetn">
+                <label>Twój koszyk</label>
+                <div class="basketCount" data-ng-click="vm.openBasket()"><span>Liczba profuktów: {{vm.len}}</span></div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6 icons">
+            <button type="button" class="searchIcon"><span class="glyphicon glyphicon-search"></span></button>
+            <button type="button" class="shoppingIcon" data-ng-click="vm.openBasket()"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+        </div>
+    </div>
+</div>
