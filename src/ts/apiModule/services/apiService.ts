@@ -45,23 +45,25 @@ namespace ApiModule {
                     let days: number = 14 * 60 * 60 * 24;
                     let minDate: number = date - days;
                     if (item[i].Release >= minDate && item[i].Release <= date) {
-                         if (item[i].Author.toLowerCase().search(this.searchText.toLowerCase()) !== -1 || item[i].Name.toLowerCase().search(this.searchText.toLowerCase()) !== -1) {
-                        items.push(item[i]);
+                        if (item[i].Author.toLowerCase().search(this.searchText.toLowerCase()) !== -1 || item[i].Name.toLowerCase().search(this.searchText.toLowerCase()) !== -1) {
+                            items.push(item[i]);
+                        }
                     }
-                    }
-                   
+
                 } else if (type === 4) {
                     let date: number = moment().unix();
                     let days: number = 14 * 60 * 60 * 24;
                     let maxDate: number = date + days;
                     if (item[i].Release <= maxDate && item[i].Release >= date) {
-                         if (item[i].Author.toLowerCase().search(this.searchText.toLowerCase()) !== -1 || item[i].Name.toLowerCase().search(this.searchText.toLowerCase()) !== -1) {
-                        items.push(item[i]);
-                    }
+                        if (item[i].Author.toLowerCase().search(this.searchText.toLowerCase()) !== -1 || item[i].Name.toLowerCase().search(this.searchText.toLowerCase()) !== -1) {
+                            items.push(item[i]);
+                        }
                     }
                 } else if (type === 5) {
-                    if (item[i].Author.toLowerCase().search(this.searchText.toLowerCase()) !== -1 || item[i].Name.toLowerCase().search(this.searchText.toLowerCase()) !== -1) {
-                        items.push(item[i]);
+                    if (item[i].SpecialOffer === true) {
+                        if (item[i].Author.toLowerCase().search(this.searchText.toLowerCase()) !== -1 || item[i].Name.toLowerCase().search(this.searchText.toLowerCase()) !== -1) {
+                            items.push(item[i]);
+                        }
                     }
                 } else if (item[i].Type === type || type === 0) {
                     if (item[i].Author.toLowerCase().search(this.searchText.toLowerCase()) !== -1 || item[i].Name.toLowerCase().search(this.searchText.toLowerCase()) !== -1) {
