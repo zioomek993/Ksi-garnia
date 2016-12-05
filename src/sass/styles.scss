@@ -1,4 +1,5 @@
 body{
+
     @media (max-width: 1067px){
         p{
             font-size: 12px;
@@ -8,6 +9,9 @@ body{
         }
         label{
             font-size: 12px;
+        }
+        button{
+            font-size: 12px!important;
         }
     }
     @media (max-width: 934px){
@@ -19,6 +23,15 @@ body{
         }
         label{
             font-size: 11px;
+        }
+        button{
+            font-size: 10px!important;
+        }
+        th{
+            font-size: 11px;
+        }
+        td{
+            font-size: 10px;
         }
     }
     min-width: 320px;
@@ -32,41 +45,42 @@ body{
                 position: relative;
                 .row{
                     @media (max-width: 886px){
-                        .search{
+                        .basket{
                             display: none;
                         }
-                        .logo,.basket{
+                        .logo,.search{
                             width: 45%;
+                            button{
+                                font-size: 13px!important;
+                            }
                         }
                         .icons{
                             display: inline-block!important;
                             width: 10%;
-                            margin-left: -42px;
+                            margin-left: -15px!important;
                             margin-top: 4%;
                             button{
                                 background-color: #F4FCFC;
                                 border: 0px;
-                                font-size: 20px;
-                            }
-                            .shoppingIcon{
-                                display: none!important;
+                                font-size: 20px!important;
                             }
                         }
                     }
-                    @media (max-width: 619px){
+                    @media (max-width: 649px){
                         .logo{
-                            width: 75%;
                             .logoContent{
                                 p{
                                     display: none;
                                 }
                             }
                         }
-                        .basket{
-                           display: none;
+                        .search{
+                            label{
+                                display: none;
+                            }
                         }
                         .icons{
-                            width: 25%;
+                            width: 10%;
                             display: inline-block!important;
                             margin: 4% auto;
                             button{
@@ -75,15 +89,8 @@ body{
                                 background-color: #F4FCFC;
                                 border: 0px;
                                 font-size: 20px;
-
                             }
-                            .shoppingIcon{
-                                display: inline-block!important;
-                            }
-                            
                         }
-                       
-                            
                     }
                     .logo{
                         div{
@@ -140,7 +147,6 @@ body{
                                     margin: 13px 13px;
                                 }    
                             }
-                            
                         }    
                     }
                     .icons{
@@ -157,6 +163,13 @@ body{
             }
             .content{
                 display: block;
+                @media(max-width:886px){
+                    .pageContent{
+                        width: 90%!important;
+                        display: block;
+                        margin: 60px auto;
+                    }
+                }
                 .pageContent{
                     width: 75%;
                     display: block;
@@ -175,11 +188,13 @@ body{
                             button{
                                 background-color: #F4FCFC;
                                 width: 100%;
+                                height: 50px;
                                 border:2px solid #DDDDDD;
                                 border-top-left-radius: 20px!important;
                                 border-top-right-radius: 20px!important;
                                 border-bottom-left-radius: 0;
                                 border-bottom-right-radius: 0; 
+                                text-align: center;
                             }
                             button:active, button:hover, button:visited, button:focus{
                                 background-color: #d8d8d8!important;

@@ -1,5 +1,5 @@
 <div class="content">
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-lg-12">
         <div class=" pageContent">
             <div class="tittle">
                 <h2>Katalog Książek</h2>
@@ -21,7 +21,7 @@
                     <button type="button" class="btn" ng-click="vm.changedCategory(4)">Zapowiedzi</button>
                 </div>
                 <div class="btn-group customButton" role="button">
-                    <button type="button" class="btn" ng-click="vm.changedCategory(5)">Specjalna Oferta</button>
+                    <button type="button" class="btn" ng-click="vm.changedCategory(5)">Specjalna</br> Oferta</button>
                 </div>
             </div>
             <div class="row">
@@ -48,7 +48,6 @@
                                     <td>{{row.Publish}}</td>
                                     <td><button class="btn" ng-click="vm.addToCard($index)">do Koszyka</button></td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
@@ -56,5 +55,4 @@
             </div>
         </div>
     </div>
-
 </div>

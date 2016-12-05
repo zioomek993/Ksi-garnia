@@ -9,7 +9,6 @@ namespace ServerModule {
         constructor($http: ng.IHttpService, localStorageService: LocalStorageService) {
             this.$http = $http;
             this.localStorageService = localStorageService;
-
         }
 
         public getHttp() {
@@ -22,6 +21,5 @@ namespace ServerModule {
             this.localStorageService.setItem(name, data);
             return data;
         }
-
     }
 }

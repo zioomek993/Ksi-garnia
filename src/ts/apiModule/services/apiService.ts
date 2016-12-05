@@ -9,6 +9,7 @@ namespace ApiModule {
         Type: number;
         SpecialOffer: boolean;
     }
+
     export class ApiService {
         static $inject = ["ServerService", "$q", "$rootScope"];
 
@@ -36,9 +37,9 @@ namespace ApiModule {
             }
             return list;
         }
+
         public sortData(item: any, type: number) {
             let items = [];
-
             for (let i = 0, len = item.length; i < len; i++) {
                 if (type === 3) {
                     let date: number = moment().unix();
@@ -49,7 +50,6 @@ namespace ApiModule {
                             items.push(item[i]);
                         }
                     }
-
                 } else if (type === 4) {
                     let date: number = moment().unix();
                     let days: number = 14 * 60 * 60 * 24;
@@ -69,14 +69,11 @@ namespace ApiModule {
                     if (item[i].Author.toLowerCase().search(this.searchText.toLowerCase()) !== -1 || item[i].Name.toLowerCase().search(this.searchText.toLowerCase()) !== -1) {
                         items.push(item[i]);
                     }
-
                 }
             }
-
-
-
             return items;
         }
+
         public getData(type?: number) {
             return this.qService((resolve, reject) => {
                 this.serverService.getHttp().then((result: { data: any }) => {
@@ -92,6 +89,7 @@ namespace ApiModule {
                 });
             });
         }
+
         public getBasketData(): DataModel[] {
             let basket: DataModel[] = this.serverService.getLocalStorage("basket");
             let model: DataModel[];
@@ -103,9 +101,11 @@ namespace ApiModule {
             }
             return model;
         }
+
         public setBasketData(data: any[]) {
             this.serverService.setLocalStorage("basket", data);
         }
+
         public addToBasket(obj: any, count: number = 1): DataModel[] {
             this.init();
             for (let i = 0; i < count; i++) {
@@ -114,9 +114,8 @@ namespace ApiModule {
             this.countItems();
             this.setBasketData(this.card);
             return this.card;
-
-
         }
+
         public countItems(add?: boolean) {
             if (add === true) {
                 this.count = this.count + 1;
@@ -130,13 +129,14 @@ namespace ApiModule {
             }
             this.eventScope.$broadcast("cardCount", this.count);
             return this.count;
-
         }
+
         public deleteFromBasket(id: number) {
             this.card.splice(id, 1);
             this.countItems();
             this.setBasketData(this.card);
         }
+
         private init() {
             this.card = this.getBasketData();
             if (this.card.length === 0 || this.card.length === undefined) {

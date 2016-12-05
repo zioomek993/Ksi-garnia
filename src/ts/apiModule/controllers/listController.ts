@@ -5,6 +5,7 @@ namespace ApiModule {
         public data: DataModel[];
         public item: DataModel;
         public typeSelected: number;
+
         private $modal: ng.ui.bootstrap.IModalService;
         private options: ng.ui.bootstrap.IModalSettings;
         private apiService: ApiService;
@@ -32,10 +33,12 @@ namespace ApiModule {
             };
             this.$modal.open(this.options).result;
         }
+
         public changedCategory(type: number) {
             this.typeSelected = type;
             this.init();
         }
+
         public init() {
             this.apiService.getData(this.typeSelected).then((resault: any) => {
                 this.data = resault;
