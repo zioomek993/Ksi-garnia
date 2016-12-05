@@ -19,7 +19,7 @@
           <tbody>
             <tr ng-repeat="row in vm.data track by $index">
               <td>{{row.Name}}</td>
-              <td>{{row.Release}}</td>
+              <td>{{row.parseBasketData()}}</td>
               <td>{{row.Price}}</td>
               <td>{{row.Author}}</td>
               <td>{{row.Publish}}</td>

@@ -18,11 +18,12 @@ namespace ApiModule {
             this.apiService.eventScope.$on("changeSearchText", () => {
                 this.init();
             });
-
         }
 
         public addToCard(id: number) {
             this.item = this.data[id];
+            this.item.Media = null;
+            this.item.Cover = null;
             this.options = {
                 animation: true,
                 templateUrl: "ts/apiModule/views/form.html",

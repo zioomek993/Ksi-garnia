@@ -5,7 +5,7 @@ namespace ApiModule {
         Release: number;
         Price: string;
         Author: string;
-        Publish: string;
+        Publish: number;
         Type: number;
         SpecialOffer: boolean;
     }
